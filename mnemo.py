@@ -7,4 +7,4 @@ for c in sys.argv[1]:
         x += d[c] + "[aàâeéèêëiïoôöuùûy]*"
     else:
         x += c
-os.system('egrep "'+x+'$" ~/bin/dico.txt')
+os.system('egrep "'+x+'$" ./dico.txt')
