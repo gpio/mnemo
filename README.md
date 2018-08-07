@@ -1,11 +1,9 @@
 # mnemo
 
-micro code Python pour générer un mot correspondant à un nombre en utilisant la méthode mnemotechnique du système majeur
-
-usage: mmemo.py [NOMBRE]
-
+- micro code Python pour générer un mot correspondant à un nombre en utilisant la méthode mnemotechnique du système majeur
+- usage: mmemo.py [NOMBRE]
 - ex: 
-'''
+'''bash
 $>./mnemo.py 334
 emmura
 emmurai
