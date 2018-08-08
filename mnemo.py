@@ -4,7 +4,7 @@
 import sys, os
 
 #Table des Regex par digit
-d = {   "0": "(ce|ci|cé|cè|cê[zsç])",
+d = {   "0": "(ce|ci|cé|cè|cê|[zsç])",
         "1": "[td]",
         "2": "(n|gn)",
         "3": "m",
@@ -17,17 +17,17 @@ d = {   "0": "(ce|ci|cé|cè|cê[zsç])",
         }
 
 # voyelles éventuelles en début de mot
-x = "^[haàâeéèêëiïoôöuùûy]*"
+x = "^[haàâeéèêëiîïoôöuùûy]*"
 
 # itération
 for c in sys.argv[1]:
     if c in d:
-        x += d[c] + "[haàâeéèêëiïoôöuùûy]*"
+        x += d[c] + "[haàâeéèêëiîïoôöuùûy]*"
     else:
         x += c
 
 # debug: affiche l'expression)
-#print(x+"$")
+print(x+"$")
 
 # execution de grep avec le regex sur l'ensemble du dico
 os.system('egrep "'+x+'$" ./dico.txt')
