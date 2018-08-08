@@ -19,6 +19,8 @@ mimerai
 momerie
 ```
 
+- CC-BY-SA
+
 # Wikipédia
 
 Le code chiffres-sons ou système majeur, appelé également grand système ou système Major (Major System, en traduction directe de l'anglais) est une méthode mnémotechnique destinée à faciliter la mémorisation des chiffres. 
@@ -26,7 +28,7 @@ Le code chiffres-sons ou système majeur, appelé également grand système ou s
 Pour coder un nombre, il est possible d'appliquer les correspondances suivantes pour chaque chiffre (méthode d'Aimé Paris et de l'abbé Moigno) :
 
 | Nombre| Lettre     | Associations visuelles                                                                   |
-|-------|:----------:|-----------------------------------------------------------------------------------------:|
+|-------|:----------:|:-----------------------------------------------------------------------------------------|
 | 0 	  |  s, z 	   | Le chiffre 0, zéro, produit un son sifflant.                                             |
 | 1 	  |  t, d 	   | Un seul trait vertical                                                                   |
 | 2 	  |  n 	       | Deux traits verticaux                                                                    |
