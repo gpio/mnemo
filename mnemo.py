@@ -27,7 +27,7 @@ for c in sys.argv[1]:
         x += c
 
 # debug: affiche l'expression)
-print(x+"$")
+#print(x+"$")
 
 # execution de grep avec le regex sur l'ensemble du dico
 os.system('egrep "'+x+'$" ./dico.txt')
