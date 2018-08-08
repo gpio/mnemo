@@ -4,7 +4,7 @@
 import sys, os
 
 #Table des Regex par digit
-d = {   "0": "(ce|ci|[zsç])",
+d = {   "0": "(ce|ci|cé|cè|cê[zsç])",
         "1": "[td]",
         "2": "(n|gn)",
         "3": "m",
@@ -22,7 +22,7 @@ x = "^[haàâeéèêëiïoôöuùûy]*"
 # itération
 for c in sys.argv[1]:
     if c in d:
-        x += d[c] + "[aàâeéèêëiïoôöuùûy]*"
+        x += d[c] + "[haàâeéèêëiïoôöuùûy]*"
     else:
         x += c
 
