@@ -11,8 +11,8 @@ d = {   "0": "(ce|ci|cé|cè|cê|[zsç])",
         "4": "r",
         "5": "l",
         "6": "(ch|ge|gé|gè|gê|gi|j)",
-        "7": "(ga|geu|go|gu|ca|co|cu|[kq])",
-        "8": "(ph|[fv])",
+        "7": "(ga|geu|go|gu|ca|co|cu|[kqx])",
+        "8": "(ph|[fvw])",
         "9": "[bp]"
         }
 
