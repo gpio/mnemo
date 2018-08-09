@@ -1,7 +1,8 @@
 #!env /bin/python
 # CC-BY-SA
 
-import sys, os
+import sys, re
+#import os
 
 #Table des Regex par digit
 d = {   "0": "(ce|ci|cé|cè|cê|[zsç])",
@@ -10,7 +11,7 @@ d = {   "0": "(ce|ci|cé|cè|cê|[zsç])",
         "3": "m",
         "4": "r",
         "5": "l",
-        "6": "(ch|ge|gé|gè|gê|gi|j)",
+        "6": "(sh|ch|ge|gé|gè|gê|gi|j)",
         "7": "(ga|geu|go|gu|ca|co|cu|[kqx])",
         "8": "(ph|[fvw])",
         "9": "[bp]"
@@ -26,8 +27,11 @@ for c in sys.argv[1]:
     else:
         x += c
 
-# debug: affiche l'expression)
-#print(x+"$")
+# c'est plus rapide avec egrep sous linux
+#os.system('egrep "'+x+'$" ./dico.txt')
 
-# execution de grep avec le regex sur l'ensemble du dico
-os.system('egrep "'+x+'$" ./dico.txt')
+pattern = re.compile(x+'$')
+for i, line in enumerate(open('dico.txt')):
+    for match in re.finditer(pattern, line):
+        print (match.group())
+
