@@ -1,7 +1,7 @@
 # mnemo
 
-- micro code Python pour générer un mot correspondant à un nombre en utilisant la méthode mnémotechnique du système majeur
-- utilisation des 'regex' et de 'egrep'
+- petit script Python pour générer un mot correspondant à un nombre en utilisant la méthode mnémotechnique du système majeur
+- quelques problèmes de Regex surtout à cause du 7 (accepte les g et c doux) 
 - usage: mmemo.py [NOMBRE]
 - ex: 
 ```bash
