@@ -5,25 +5,25 @@ import sys, re
 #import os
 
 #Table des Regex par digit
-d = {   "0": "(ce|ci|cé|cè|cê|[zsç])",
+d = {   "0": "(c[ieéèê]|[szç])",
         "1": "[td]",
         "2": "(n|gn)",
         "3": "m",
         "4": "r",
         "5": "l",
-        "6": "(sh|ch|ge|gé|gè|gê|gi|j)",
-        "7": "(ga|geu|go|gu|ca|co|cu|[kqx])",
+        "6": "([sc]h|g[eéèêiî]|j)",
+        "7": "[gckqx]",
         "8": "(ph|[fvw])",
         "9": "[bp]"
         }
 
 # voyelles éventuelles en début de mot
-x = "^[haàâeéèêëiîïoôöuùûy]*"
+x = "^[haàâeéèêëiîïoôöuùûy-]*"
 
 # itération
 for c in sys.argv[1]:
     if c in d:
-        x += d[c] + "[haàâeéèêëiîïoôöuùûy]*"
+        x += d[c] + "[haàâeéèêëiîïoôöuùûyi-]*"
     else:
         x += c
 
