@@ -1,4 +1,4 @@
-# mnemo
+# MNEMO
 
 - petit script Python pour générer un mot correspondant à un nombre en utilisant la méthode mnémotechnique du système majeur
 - quelques problèmes de Regex surtout à cause du 7 (accepte les g et c doux) 
